@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AppExADT2_RicardoMartinez</string>
+    <string name="tv_nombre">Nombre:</string>
+    <string name="hint_nombre">Escribe el nombre del evento</string>
+    <string name="tv_municipio">Municipio:</string>
+    <string name="hint_municipio">Escribe un municipio</string>
+    <string name="tv_descripcion">Descripción:</string>
+    <string name="tv_fecha">Fecha:</string>
+    <string name="hint_Fecha">Fecha del evento</string>
+    <string name="hint_descripcion">Descripción del evento</string>
+    <string name="tv_hora">Hora:</string>
+    <string name="hint_hora">Hora del evento</string>
+    <string name="btn_registrar">Registrar evento</string>
+    <string name="btn_consultar">consultar evento</string>
+    <string name="btn_modificar">modificar evento</string>
+    <string name="btn_eliminar">eliminar evento</string>
+
+</resources>

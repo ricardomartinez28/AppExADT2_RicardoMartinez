@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlEventos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    android:padding="@dimen/padding"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etHora"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etNombre"
+        android:layout_alignLeft="@+id/etNombre"
+        android:layout_alignBottom="@+id/tvDescripcion"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="-129dp"
+        android:ems="10"
+        android:hint="@string/hint_hora"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etFecha"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etNombre"
+        android:layout_alignBottom="@+id/tvDescripcion"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="-72dp"
+        android:ems="10"
+        android:hint="@string/hint_Fecha"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="-1dp"
+        android:layout_alignLeft="@+id/etNombre" />
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etNombre"
+        android:layout_alignBottom="@+id/tvDescripcion"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-13dp"
+        android:ems="10"
+        android:hint="@string/hint_descripcion"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/etNombre"
+        android:layout_marginLeft="0dp" />
+
+    <EditText
+        android:id="@+id/etMunicipio"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:ems="10"
+        android:hint="@string/hint_municipio"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etNombre"
+        android:text="@string/tv_nombre"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:ems="10"
+        android:hint="@string/hint_nombre"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvMunicipio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etMunicipio"
+        android:text="@string/tv_municipio"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvNombre"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="169dp"
+        android:text="@string/tv_descripcion"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/tvNombre"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvNombre"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_marginTop="230dp"
+        android:text="@string/tv_fecha"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/tvNombre" />
+
+    <TextView
+        android:id="@+id/tvHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvNombre"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="266dp"
+        android:text="@string/tv_hora"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/tvNombre" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvNombre"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="183dp"
+        android:onClick="registrarEvento"
+        android:text="@string/btn_registrar" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="132dp"
+        android:onClick="consultarEvento"
+        android:text="@string/btn_consultar" />
+
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp"
+        android:onClick="modificarEvento"
+        android:text="@string/btn_modificar" />
+
+    <Button
+        android:id="@+id/btn_eliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:onClick="eliminarEvento"
+        android:text="@string/btn_eliminar" />
+</RelativeLayout>
